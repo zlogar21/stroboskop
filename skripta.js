@@ -33,6 +33,8 @@ window.addEventListener('load', function() {
 			ustavi = false;
 		} else {
 			novId = (id+1) % vrednosti.length;
+			minCas = document.getElementById("min").value;
+			maxCas = document.getElementById("max").value;
 			timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
 			setTimeout(function() {spremeniBarvo(novId)} , timeout);
 		}		
